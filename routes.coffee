@@ -1,5 +1,5 @@
 Firebase = require "firebase"
-fs = require('fs');
+fs = require "fs"
 
 title = "Cloud"
 

@@ -45,6 +45,6 @@ app.use (req, res, next) ->
   res.type("txt").send "Not found"
 
 #Launch
-port = if dev then 8124 else 8123
+port = if dev then 8126 else 8125
 app.listen process.env.PORT || port
 console.log "Node @ http://localhost:#{port}...\n"

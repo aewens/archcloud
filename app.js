@@ -55,7 +55,7 @@
     return res.type("txt").send("Not found");
   });
 
-  port = dev ? 8124 : 8123;
+  port = dev ? 8126 : 8125;
 
   app.listen(process.env.PORT || port);
 
