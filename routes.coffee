@@ -13,6 +13,8 @@ exports.test_api = (req, res) ->
     delete search["__proto__"]
 
     file = "public/javascripts/config.json"
+    
+    console.log "Testing..."
 
     obj = JSON.parse(fs.readFile(file, "utf8"))
 

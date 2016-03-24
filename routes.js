@@ -21,6 +21,7 @@
     search = req.query;
     delete search["__proto__"];
     file = "public/javascripts/config.json";
+    console.log("Testing...");
     obj = JSON.parse(fs.readFile(file, "utf8"));
     ref = new Firebase(obj.db).child("api/test");
     info = {
