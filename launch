@@ -3,7 +3,7 @@
 echo "Killing processes..."
 kill -KILL $(ps aux | grep "[c]offee -wc" | awk '{print $2}') &> /dev/null
 kill -KILL $(ps aux | grep "[n]odemon" | awk '{print $2}') &> /dev/null
-fuser -k 8125/tcp
+#fuser -k 8125/tcp
 echo "Loading..."
 sleep 2
 coffee -wc . &
